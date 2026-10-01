@@ -1,0 +1,38 @@
+[
+  {
+    "round": "speed",
+    "check": "crawl 1000 book pages",
+    "passed": true,
+    "detail": "1000 unique books, 1050 requests in 40.7s (25.8 req/s), 0 failed"
+  },
+  {
+    "round": "javascript",
+    "check": "render a JS-only page",
+    "passed": true,
+    "detail": "Fetcher saw 0 quotes in 0.8s, DynamicFetcher saw 10 in 3.7s"
+  },
+  {
+    "round": "antibot",
+    "check": "https://nopecha.com/demo/cloudflare",
+    "passed": true,
+    "detail": "Fetcher HTTP 403 in 0.0s | DynamicFetcher HTTP 403 in 1.1s | StealthyFetcher HTTP 200 in 7.0s"
+  },
+  {
+    "round": "antibot",
+    "check": "https://www.scrapingcourse.com/cloudflare-challenge",
+    "passed": true,
+    "detail": "Fetcher HTTP 403 in 0.1s | DynamicFetcher HTTP 403 in 2.9s | StealthyFetcher HTTP 200 in 15.0s"
+  },
+  {
+    "round": "antibot",
+    "check": "https://www.scrapingcourse.com/antibot-challenge",
+    "passed": true,
+    "detail": "Fetcher HTTP 403 in 0.1s | DynamicFetcher HTTP 403 in 2.6s | StealthyFetcher HTTP 200 in 4.7s"
+  },
+  {
+    "round": "adaptive",
+    "check": "survive a site redesign",
+    "passed": true,
+    "detail": "old selector matched 0 elements after the redesign, adaptive mode recovered '£51.77' (expected '£51.77')"
+  }
+]
